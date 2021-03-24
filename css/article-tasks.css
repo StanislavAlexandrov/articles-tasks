@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+:root {
+    --main-bg-color: white;
+    --main-menu-color: #f0f0f0;
+    --main-header-color: black;
+    --main-link-color: blue;
+    --main-title-color: #009688;
+    --main-font-size: 24px;
+    --main-menu-font-size: 18px;
+    --main-title-font-size: 36px;
+    --inverted-bg-color: black;
+    --inverted-menu-color: black;
+    --inverted-text-color: white;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background-color: var(--main-header-color);
+    padding: 16px 16px;
+}
+
+.header a {
+    color: var(--main-bg-color);
+    font-size: var(--main-menu-font-size);
+    line-height: 1.5;
+    padding-bottom: 16px;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+.articles-task_sidebar {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 250px;
+    background-color: var(--main-menu-color);
+}
+
+.articles-task_sidebar__task {
+    padding: 28px 16px;
+    font-size: var(--main-menu-font-size);
+}
+
+.articles-task_sidebar__task:hover {
+    background-color: var(--inverted-bg-color);
+    color: var(--inverted-text-color);
+}
+
+.articles-task_sidebar__task:hover
+    ~ .articles-task_main__container__updatedText {
+    color: red;
+}
+
+.articles-task_sidebar__task:hover > a {
+    color: var(--inverted-text-color);
+}
+
+.articles-task_main__container__text,
+.articles-task_main__container__answerText,
+.articles-task_main__container__updatedText {
+    font-size: var(--main-font-size);
+    padding-top: 16px;
+    padding-bottom: 16px;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.articles-task_main {
+    flex-basis: 800px;
+    padding: 16px;
+}
+
+.articles-task_main__container__title {
+    color: var(--main-title-color);
+    padding-top: 26px;
+    padding-bottom: 26px;
+    font-weight: 400;
+    font-size: var(--main-title-font-size);
+}
+
+.articles-task_main__container__text {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.articles-task__button {
+    padding: 8px 16px;
+    vertical-align: middle;
+    border: none;
+    text-decoration: none;
+    background-color: none;
+}
+
+.articles-task__button:hover {
+    transform: scale(1.1);
+}
+
+.articles-task_main__container__numberOfArticles {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}

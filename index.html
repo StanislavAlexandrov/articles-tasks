@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../article-tasks/css/article-tasks.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Roboto"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <a href="#">Article Tasks</a>
+                <a href="#">Group 1</a>
+            </div>
+        </header>
+        <div class="container">
+            <div class="articles-task_sidebar">
+                <div
+                    class="articles-task_sidebar__task"
+                    onClick="{sentenceBankNumber = 1 , clickNumber = 0, hideArticles()}"
+                >
+                    <a
+                        href="#"
+                        onClick="{sentenceBankNumber = 1 , clickNumber = 0, hideArticles()}"
+                        >Task 1 (Wall Street GME)</a
+                    >
+                </div>
+                <div
+                    class="articles-task_sidebar__task"
+                    onClick="{sentenceBankNumber = 2 , clickNumber = 0, hideArticles()}"
+                >
+                    <a
+                        href="#"
+                        onClick="{sentenceBankNumber = 2 , clickNumber = 0, hideArticles()}"
+                        >Task 2 (TOEFL)</a
+                    >
+                </div>
+                <div
+                    class="articles-task_sidebar__task"
+                    onClick="{sentenceBankNumber = 3 , clickNumber = 0, hideArticles()}"
+                >
+                    <a
+                        href="#"
+                        onClick="{sentenceBankNumber = 3 , clickNumber = 0, hideArticles()}"
+                        >Task 3 (Webcams)
+                    </a>
+                </div>
+                <div
+                    class="articles-task_sidebar__task"
+                    onClick="{sentenceBankNumber = 4 , clickNumber = 0, hideArticles()}"
+                >
+                    <a
+                        href="#"
+                        onClick="{sentenceBankNumber = 4 , clickNumber = 0, hideArticles()}"
+                        >Task 4 (Standing Desks)
+                    </a>
+                </div>
+            </div>
+            <div class="articles-task_main">
+                <div class="articles-task_main__container">
+                    <h1 class="articles-task_main__container__title">
+                        Find the missing articles
+                    </h1>
+                    <button
+                        class="articles-task__button"
+                        onclick="hideArticles()"
+                    >
+                        Next sentence
+                    </button>
+                    <button
+                        class="articles-task__button"
+                        onclick="showAnswers() "
+                    >
+                        Show Answer
+                    </button>
+                    <p class="articles-task_main__container__text"></p>
+                    <p class="articles-task_main__container__updatedText">
+                        The task will appear here.
+                    </p>
+                    <p
+                        class="articles-task_main__container__numberOfArticles"
+                    ></p>
+
+                    <p class="articles-task_main__container__answerText"></p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="articles-task_footer">footer</div>
+        </footer>
+
+        <script src="../article-tasks/data/articles-tasks-texts.js"></script>
+        <script src="../article-tasks/js/article-tasks.js"></script>
+    </body>
+</html>
